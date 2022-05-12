@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "b94a9d7e-65d8-4cf8-a23a-b03748613370",
+		"_postman_id": "988c062d-0fdb-47a7-96c7-2dc21734a16c",
 		"name": "Karat API Release",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -137,7 +137,7 @@
 						"body": {
 							"mode": "graphql",
 							"graphql": {
-								"query": "mutation CreateInvitation(\n  $name: String!\n  $email: String!\n  $roleId: ID!\n  $phone: String\n  $atsUrl: String\n  $resume: String\n  $githubUrl: String\n  $linkedinUrl: String\n) {\n  createInvitation (\n    input: {\n      name: $name\n      email: $email\n      roleId: $roleId\n      phone: $phone\n      atsUrl: $atsUrl\n      resume: $resume\n      githubUrl: $githubUrl\n      linkedinUrl: $linkedinUrl\n    }\n  )\n  {\n   assessment {\n    id\n    candidacy {\n        id\n    }\n   }\n   errors {\n       message\n   }\n  }\n}",
+								"query": "mutation CreateInvitation(\n  $name: String!\n  $email: String!\n  $roleId: ID!\n  $phone: String\n  $atsUrl: String\n  $resume: String\n  $githubUrl: String\n  $linkedinUrl: String\n) {\n  createInvitation (\n    input: {\n      name: $name\n      email: $email\n      roleId: $roleId\n      phone: $phone\n      atsUrl: $atsUrl\n      resume: $resume\n      githubUrl: $githubUrl\n      linkedinUrl: $linkedinUrl\n    }\n  )\n  {\n   assessment {\n    id\n    candidacy {\n        id\n    }\n    link\n   }\n   errors {\n       message\n   }\n  }\n}",
 								"variables": "\n{\n  // These fields are mandatory\n  \n  \"name\": \"Candidate Name\",\n  \"email\": \"CANDIDATE_EMAIL_ADDRESS\",\n  \"roleId\": \"NUMERIC_ROLE_ID\"\n\n  // The following fields are optional\n\n  // \"phone\": null, // The candidate's phone number as a string, e.g. \"+16565551234\"\n  // \"atsUrl\": null, // The ATS URL for the candidate, e.g. \"https://api.ats.com/u/12321\",\n  // \"resume\": null, // The Resume URL for the candidate, e.g. \"https://dropbox.com/q/resume.pdf\",\n  // \"githubUrl\": null, // The GitHub URL for the candidate, e.g. \"https://github.com/someuser\",\n  // \"linkedinUrl\": null, // The LinkedIn URL for the candidate, e.g. \"https://linkedin.com/1231231\"\n}"
 							}
 						},
