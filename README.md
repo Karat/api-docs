@@ -1,9 +1,20 @@
-# Karat API Documentation
+# Karat API Postman collection
 
-Documentation for the Karat API. Postman collections can be found here - import them into Postman, update the `token` and `subdomain` variables in the collection (or add an environment), and you're ready to go!
+You can find an available Postman collection for the Karat API in this repository.
 
-Full API documentation including how to generate a an API key can be found at https://karat.slab.com/posts/karat-api-documentation-3aua4q64
+## Karat API documentation
 
-https://github.com/Karat/api-sdk has example SDKs and demonstrations of how to query the API.
+For full documentation of the Karat API see the following resources:
 
-Copyright © 2022 Karat Inc.
+* [Overview](https://karat.slab.com/posts/karat-api-overview-6l4gprc3)
+* [Documentation](https://karat.slab.com/posts/karat-api-documentation-dezzam7y)
+
+## Get started
+
+Follow these steps to get started:
+
+1. Import the collection into [Postman](https://www.postman.com/).
+2. Update the token and subdomain variables (either within the collection or by adding them to an environment).
+3. You're ready to go!
+
+Copyright © 2024 Karat Inc.
